@@ -1,28 +1,29 @@
-from minitorch.operators import (
-    mul,
-    add,
-    neg,
-    relu,
-    addLists,
-    prod,
-    negList,
-    id,
-    inv,
-    lt,
-    eq,
-    max,
-    sigmoid,
-    relu_back,
-    log_back,
-    inv_back,
-    sum,
-)
+import pytest
 from hypothesis import given
 from hypothesis.strategies import lists
-from .strategies import small_floats, assert_close
-import pytest
-from minitorch import MathTest
 
+from minitorch import MathTest
+from minitorch.operators import (
+    add,
+    addLists,
+    eq,
+    id,
+    inv,
+    inv_back,
+    log_back,
+    lt,
+    max,
+    mul,
+    neg,
+    negList,
+    prod,
+    relu,
+    relu_back,
+    sigmoid,
+    sum,
+)
+
+from .strategies import assert_close, small_floats
 
 # ## Task 0.1 Basic hypothesis tests.
 
@@ -105,7 +106,7 @@ def test_sigmoid(a):
     * it is  strictly increasing.
     """
     # TODO: Implement for Task 0.2.
-    raise NotImplementedError('Need to implement for Task 0.2')
+    raise NotImplementedError("Need to implement for Task 0.2")
 
 
 @pytest.mark.task0_2
@@ -113,7 +114,7 @@ def test_sigmoid(a):
 def test_transitive(a, b, c):
     "Test the transitive property of less-than (a < b and b < c implies a < c)"
     # TODO: Implement for Task 0.2.
-    raise NotImplementedError('Need to implement for Task 0.2')
+    raise NotImplementedError("Need to implement for Task 0.2")
 
 
 @pytest.mark.task0_2
@@ -124,7 +125,7 @@ def test_symmetric():
     """
     None
     # TODO: Implement for Task 0.2.
-    raise NotImplementedError('Need to implement for Task 0.2')
+    raise NotImplementedError("Need to implement for Task 0.2")
 
 
 @pytest.mark.task0_2
@@ -135,7 +136,7 @@ def test_distribute():
     """
     None
     # TODO: Implement for Task 0.2.
-    raise NotImplementedError('Need to implement for Task 0.2')
+    raise NotImplementedError("Need to implement for Task 0.2")
 
 
 @pytest.mark.task0_2
@@ -145,7 +146,7 @@ def test_other():
     """
     None
     # TODO: Implement for Task 0.2.
-    raise NotImplementedError('Need to implement for Task 0.2')
+    raise NotImplementedError("Need to implement for Task 0.2")
 
 
 # ## Task 0.3  - Higher-order functions
@@ -174,7 +175,7 @@ def test_sum_distribute(ls1, ls2):
     is the same as the sum of each element of `ls1` plus each element of `ls2`.
     """
     # TODO: Implement for Task 0.3.
-    raise NotImplementedError('Need to implement for Task 0.3')
+    raise NotImplementedError("Need to implement for Task 0.3")
 
 
 @pytest.mark.task0_3
