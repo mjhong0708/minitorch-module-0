@@ -1,6 +1,6 @@
 import pytest
 from hypothesis import given
-from hypothesis.strategies import lists, floats
+from hypothesis.strategies import floats, lists
 
 from minitorch import MathTest
 from minitorch.operators import (
